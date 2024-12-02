@@ -410,7 +410,8 @@ System.out.println(kcontext.getVariable("currentState"));]]></bpmn2:script>
           <drools:metaValue><![CDATA[Wait For Bar Code Scan]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[kcontext.setVariable("currentState","WAIT_FOR_BAR_CODE_SCAN");
+          <drools:script><![CDATA[kcontext.setVariable("currentState","
+");
 System.out.println(kcontext.getVariable("currentState"));]]></drools:script>
         </drools:onEntry-script>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
